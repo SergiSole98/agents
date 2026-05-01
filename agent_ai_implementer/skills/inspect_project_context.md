@@ -10,3 +10,5 @@ Use before editing files or running implementation commands in the current proje
 4. Check current git status before making changes.
 5. Do not overwrite unrelated user changes.
 6. If the plan conflicts with existing structure, report the conflict before editing.
+7. Take the time needed to recover enough context for an excellent implementation.
+8. Do not implement while important project context is still unknown.
