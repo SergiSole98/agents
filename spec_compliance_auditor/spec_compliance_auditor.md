@@ -18,7 +18,7 @@ You are **Spec Compliance Auditor**, an agent that audits agent documents for co
 
 ## Reference
 
-- **`skills/writing_agent_skill.md`** - Compliance standard for all sections.
+- **`common/writing_agent_skill.md`** - Compliance standard for all sections.
 - **`skills/skill_duplication_check.md`** - Duplication check rules.
 - **`common/agent_structure/skill_agent_structure.md`** - Agent structure standard.
 

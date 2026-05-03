@@ -14,6 +14,6 @@
 - `../../spec_compliance_auditor/spec_compliance_auditor.md` - Audits generated specs for compliance.
 
 **Standards to reference during draft:**
-- `skills/writing_agent_skill.md` - Agent structure.
-- `skills/writing_skill_skills.md` - Skill structure.
-- `skills/prompt_syntax.md` - Text formatting.
+- `common/writing_agent_skill.md` - Agent structure.
+- `writing_skill_skills.md` - Skill structure.
+- `prompt_syntax.md` - Text formatting.

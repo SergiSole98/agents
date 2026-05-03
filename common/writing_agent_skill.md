@@ -10,7 +10,7 @@
 ### Task — what it is and what it is not
 
 5. **Definition:** Sequence **1 -> 2 -> 3** of what the agent does in a typical request. Only **verbs** and clear order.
-6. **Include:** Maximum **3-7** steps. Each step = one executable action.
+6. **Include:** One step per executable action.
 7. **Forbidden in Task:** long conditionals ("if... then..." in extended form), repeated "do not / always," style rules - those belong in **Rules**.
 8. **Test:** "Is this a step that always happens in the flow?" Yes -> Task. "Is it an exception or limit?" -> Rules.
 
@@ -42,4 +42,4 @@
 23. **Drafting order:** First objective (Role, Task, Context) -> then limits (Rules) -> then dependencies (Reference) -> then format (Output).
 24. Do not reference other agents inside Role, Task, Context, or Rules. 
     Cross-agent references belong only in **Reference**.
-25. **Skill routing:** Cursor skills live in `.cursor/skills/`; agent skills live in the local `skills/` folder. Confirm type before delegating to `../../skill_spec_generator/skill_spec_generator.md`.
+25. **Skill routing:** Cursor skills live in `.cursor/skills/`; agent skills live in the local `skills/` folder. Confirm type before delegating to `../skill_spec_generator/skill_spec_generator.md`.
