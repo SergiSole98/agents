@@ -1,8 +1,5 @@
 # Execute implementation steps
 
-## Context
-Use while applying the approved plan to the project.
-
 ## Rules
 1. Execute one plan step at a time.
 2. Make the smallest change that satisfies the current step.

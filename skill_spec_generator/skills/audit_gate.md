@@ -1,9 +1,5 @@
 # Audit Gate Skill
 
-## Context
-
-When an agent produces a draft spec (agent, skill, etc.) that must pass compliance before delivery, use this gate pattern to ensure quality and standards adherence.
-
 ## Rules
 
 1. Draft the full spec according to the relevant standard (writing_agent_skill.md, writing_skill_skills.md, etc.).

@@ -1,8 +1,5 @@
 # Inspect project context
 
-## Context
-Use before editing files or running implementation commands in the current project.
-
 ## Rules
 1. Identify the project root before changing files.
 2. Inspect existing files, naming conventions, and folder structure relevant to the plan.

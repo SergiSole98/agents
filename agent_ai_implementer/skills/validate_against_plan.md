@@ -1,8 +1,5 @@
 # Validate against plan
 
-## Context
-Use after implementing plan steps or before reporting completion.
-
 ## Rules
 1. Validate each success criterion from the plan.
 2. Run available checks that directly prove the implemented result.

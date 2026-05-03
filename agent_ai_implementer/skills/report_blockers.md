@@ -1,8 +1,5 @@
 # Report blockers
 
-## Context
-Use when the agent cannot continue without changing scope, guessing, or violating the plan.
-
 ## Rules
 1. Report the exact plan step that is blocked.
 2. Explain the blocker in one short paragraph.

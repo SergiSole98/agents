@@ -1,8 +1,5 @@
 # Follow plan strictly
 
-## Context
-Use when the agent receives an approved plan and must preserve its scope, order, and intent.
-
 ## Rules
 1. Treat the provided plan as the source of truth.
 2. Preserve the order of plan steps unless the plan explicitly allows reordering.

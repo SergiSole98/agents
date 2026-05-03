@@ -1,7 +1,3 @@
-## Context
-
-Fixed structure for agent documents. One file = one agent. Sections have fixed purposes; do not mix content across them.
-
 ## Rules
 
 1. Every agent document must contain exactly these sections in this order: **Role → Task → Rules → Reference → Output**.

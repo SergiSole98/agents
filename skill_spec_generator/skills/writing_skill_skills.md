@@ -1,8 +1,5 @@
 # Skill writing skill
 
-## Context
-Fixed structure for agent skill files. One file = one skill. Format CRR: Context, Rules, Reference. No Role, no Task, no Output — those belong to the agent that consumes the skill.
-
 ## Rules
 1. **Context:** When and where the skill applies. 1-2 lines max.
 2. **Rules:** Concrete instructions, one per line. No explanations of why.

@@ -1,8 +1,5 @@
 # Prompt syntax
 
-## Context
-Formatting conventions for writing LLM instructions.
-
 ## Rules
 1. Use markdown headers (`##`) to separate sections. Never mix content between sections.
 2. One instruction per line. Number steps. Never two instructions on the same line.

@@ -1,7 +1,3 @@
-## Context
-
-Detects rules in an agent document that restate — verbatim or paraphrased — what a referenced skill already covers.
-
 ## Rules
 
 1. Read every skill file listed in the agent's Rules or Reference sections.

@@ -1,7 +1,3 @@
-## Context
-
-Fixed structure for agent documents. One file = one agent. Each section has a specific purpose; do not mix content across sections.
-
 ## Rules
 
 ### Role — what it is and what it is not
