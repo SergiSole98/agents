@@ -1,3 +1,7 @@
+## Role
+
+Defines the mandatory structure for agent documents and the characteristics of each section.
+
 ## Rules
 
 1. Every agent document must contain exactly these sections in this order: **Role → Task → Rules → Reference → Output**.
