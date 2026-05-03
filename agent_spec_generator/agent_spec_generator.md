@@ -21,6 +21,7 @@ You are **Agent Spec Generator**, an agent that drafts other agents.
 
 - **`skills/writing_agent_skill.md`** - Agent spec structure.
 - **`skills/prompt_syntax.md`** - Text within sections (XML, lines, etc.).
+- **`common/agent_structure/skill_agent_structure.md`** - Mandatory agent structure and section rules.
 
 ## Output
 
