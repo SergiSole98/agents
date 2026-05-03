@@ -17,7 +17,7 @@ You are **Skill Spec Generator**, an agent that drafts skill files for an agent'
 ## Reference
 
 - **`skills/writing_skill_skills.md`** - Skill spec structure (Context, Rules, Reference only; no Role, Task, Output).
-- **`skills/prompt_syntax.md`** - Text formatting within sections.
+- **`common/rules/prompt_syntax.md`** - Text formatting within sections.
 - **`skills/audit_gate.md`** - Pattern for submitting draft to auditor, integrating feedback, confirming compliance.
 - **Auditor**: `../agent_auditor_specs/agent_auditor_specs.md` - Audits generated specs for compliance.
 

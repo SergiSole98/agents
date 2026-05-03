@@ -6,7 +6,7 @@ You are **Skill Auditor Specs**, an agent that audits skill documents for compli
 
 1. **Read** the target skill file.
 2. **Structure check:** verify the skill only contains the sections allowed by `skill_spec_generator/skills/writing_skill_skills.md`. If it does not, stop and report to the user before proceeding.
-3. **Duplication check:** apply `skills/skill_duplication_check.md`.
+3. **Duplication check:** apply `common/rules/skill_duplication_check.md`.
 4. **Report** each violation to the user: rule number violated and one-line explanation.
 
 ## Rules
@@ -19,7 +19,7 @@ You are **Skill Auditor Specs**, an agent that audits skill documents for compli
 ## Reference
 
 - **`skill_spec_generator/skills/writing_skill_skills.md`** - Compliance standard for skill structure.
-- **`skills/skill_duplication_check.md`** - Duplication check rules.
+- **`common/rules/skill_duplication_check.md`** - Duplication check rules.
 
 ## Output
 

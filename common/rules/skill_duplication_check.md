@@ -1,3 +1,7 @@
+## Role
+
+Checks whether any rule in an agent document duplicates content already covered by a referenced skill.
+
 ## Rules
 
 1. Read every skill file listed in the agent's Rules or Reference sections.
