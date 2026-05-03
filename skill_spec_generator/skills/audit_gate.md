@@ -11,7 +11,7 @@
 ## Reference
 
 **Auditor Agents:**
-- `../../spec_compliance_auditor/spec_compliance_auditor.md` - Audits generated specs for compliance.
+- `../../agent_auditor_specs/agent_auditor_specs.md` - Audits generated specs for compliance.
 
 **Standards to reference during draft:**
 - `common/writing_agent_skill.md` - Agent structure.
