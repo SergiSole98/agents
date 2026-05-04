@@ -1,4 +1,6 @@
-# Execute implementation steps
+## Role
+
+Executes approved plan steps in order while keeping each change scoped to the plan.
 
 ## Rules
 1. Execute one plan step at a time.

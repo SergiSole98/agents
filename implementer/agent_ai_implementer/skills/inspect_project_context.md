@@ -1,4 +1,6 @@
-# Inspect project context
+## Role
+
+Recovers the project context needed before changing files required by an approved plan.
 
 ## Rules
 1. Identify the project root before changing files.
@@ -7,5 +9,4 @@
 4. Check current git status before making changes.
 5. Do not overwrite unrelated user changes.
 6. If the plan conflicts with existing structure, report the conflict before editing.
-7. Take the time needed to recover enough context for an excellent implementation.
-8. Do not implement while important project context is still unknown.
+7. Do not implement while important project context is still unknown.

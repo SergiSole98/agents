@@ -1,4 +1,6 @@
-# Report blockers
+## Role
+
+Reports implementation blockers clearly when a plan step cannot continue without user input or a resolved issue.
 
 ## Rules
 1. Report the exact plan step that is blocked.

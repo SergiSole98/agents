@@ -1,4 +1,6 @@
-# Follow plan strictly
+## Role
+
+Keeps implementation bound to the approved plan and stops when the plan cannot be followed safely.
 
 ## Rules
 1. Treat the provided plan as the source of truth.

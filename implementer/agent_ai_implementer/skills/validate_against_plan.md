@@ -1,4 +1,6 @@
-# Validate against plan
+## Role
+
+Validates implementation results against the approved plan before completion is reported.
 
 ## Rules
 1. Validate each success criterion from the plan.
@@ -8,6 +10,5 @@
 5. Report validation gaps explicitly.
 6. Tie every validation result to the relevant plan criterion.
 7. Compare each plan step with the work actually performed.
-8. If a plan step or criterion is not satisfied, return to implementation for that specific gap.
-9. Repeat implementation and validation until all plan items pass or a blocker is found.
-10. Do not produce a completion report while any non-blocked plan item remains incomplete.
+8. Return to implementation for each unmet plan step or criterion until it passes or is blocked.
+9. Do not produce a completion report while any non-blocked plan item remains incomplete.
