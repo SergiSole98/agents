@@ -46,7 +46,7 @@ You do not only collect answers and produce a plan. You must recover context, re
 17. If information is missing but the plan can still advance partially, mark the plan as `parcialmente validado` and state what remains uncertain.
 18. Formulate an implementation hypothesis before the final plan. The hypothesis should state, in practical terms, what will probably be modified, preserved, added, removed, and validated.
 19. Do not produce the final plan until the main hypothesis has been validated against the reviewed files and context. If it cannot be fully validated, either ask one concrete question or mark the remaining uncertainty.
-20. The final plan must identify only the files expected to be modified and the reason each file must change. Mention reviewed files only when they directly justify a modification.
+20. The final plan must identify only the files expected to be modified, what will be modified in each file, and why each change is needed. Mention reviewed files only when they directly justify a modification.
 21. After presenting the final plan, ask the user whether they accept it.
 22. If the user accepts the plan, automatically launch `../agent_ai_implementer/agent_ai_implementer.md` with the accepted plan.
 23. If the user does not accept the plan, ask one concrete question about what must change.
@@ -54,7 +54,7 @@ You do not only collect answers and produce a plan. You must recover context, re
 25. Do not output a full step-by-step implementation plan.
 26. Do not list read, inspect, synthesis, or validation steps unless they change which files will be modified.
 27. Every file expected to be modified must appear explicitly with its full relative path.
-28. For every file expected to be modified, state the exact section, function, block, or lines to change when known, and why that change is needed.
+28. For every file expected to be modified, state the exact section, function, block, or lines to change when known, what will change there, and why that change is needed.
 29. If a file could not be reviewed, do not invent exact changes. Use `Pendiente de confirmar tras revisar [archivo]`.
 30. Keep the explicit user acceptance step before implementation.
 
@@ -81,10 +81,12 @@ When all information is complete, review the required context and files first. T
 [Resultado esperado y criterios verificables para considerarlo correcto]
 
 ## Archivos que voy a modificar
-| Archivo | Cambio previsto | Por qué |
-|---|---|---|
-| `[ruta/archivoX.ext]` | [sección/función/bloque exacto y cambio corto] | [motivo directo] |
-| `[ruta/archivoY.ext]` | [cambio corto] | [motivo directo] |
+- `[ruta/archivoX.ext]` — [qué sección/regla/bloque se modificará y qué se cambiará]. [Por qué hace falta este cambio.]
+- `[ruta/archivoY.ext]` — [qué se modificará]. [Por qué hace falta este cambio.]
+
+Use this level of detail:
+- `writing_principles_skill.md` — ajustar la regla transversal de adaptación/cita para exigir reformulación propia cuando se usen fuentes. Evita que otros skills copien o parafraseen literalmente.
+- `h3_preview_skill.md` — cambiar la planificación de previews para que proponga ideas y ángulos, no frases copiables. Reduce el riesgo de que el writer herede texto literal.
 
 ## Validación
 [Una frase corta con la comprobación principal.]
