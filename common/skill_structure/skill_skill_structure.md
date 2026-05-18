@@ -9,4 +9,5 @@ Defines the mandatory structure for skill documents and the characteristics of e
 3. **Role:** one sentence — what the skill does and when it applies.
 4. **Rules:** concrete instructions, one per line, numbered. Forbidden: explanations of why, repeating what a referenced skill already covers.
 5. Every rule must prevent one concrete failure; delete rules that do not.
-6. **Output:** the response the skill is expected to produce — exact answer format, required fields, headers, verbosity limits, or delivery constraints.
+6. **Reference:** paths to files the skill must read. Each entry must state what the file is and what the skill uses it for.
+7. **Output:** the response the skill is expected to produce — exact answer format, required fields, headers, verbosity limits, or delivery constraints.
