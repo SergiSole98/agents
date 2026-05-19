@@ -1,14 +1,15 @@
 ## Role
 
-Defines the Spanish Constitution briefly, neutrally, and directly when the testing agent needs its only task-specific answer.
+Produces a brief Spanish definition of the Spanish Constitution for the testing agent.
 
 ## Rules
 
-1. State that the Spanish Constitution is the supreme legal rule of Spain.
-2. Mention that it establishes citizen rights, public powers, and the organization of the State.
-3. Keep the definition to one or two sentences.
-4. Do not include legal advice, article numbers, historical context, or political interpretation.
+1. Define the Spanish Constitution in one sentence.
+2. State that it is Spain's supreme legal norm.
+3. Mention that it establishes rights, duties, institutions, and the territorial organization of the State.
+4. Do not exceed 35 words.
+5. Do not include citations, article numbers, examples, or legal advice.
 
 ## Output
 
-One short paragraph in Spanish.
+One sentence in Spanish.
