@@ -11,3 +11,4 @@ Defines the mandatory structure for skill documents and the characteristics of e
 5. Every rule must prevent one concrete failure; delete rules that do not.
 6. **Reference:** paths to files the skill must read. Each entry must state what the file is and what the skill uses it for.
 7. **Output:** the response the skill is expected to produce — exact answer format, required fields, headers, verbosity limits, or delivery constraints.
+8. Every skill must stay strictly within its stated objective; include only rules, references, and context explicitly required by the Role — nothing more.

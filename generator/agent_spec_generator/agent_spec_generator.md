@@ -54,7 +54,8 @@ N. **Deliver** only the Output format below.
 ## Rules
 1. Execute Workflow steps like an assembly line: start each Workflow step only after all processes from previous steps are complete.
 2. After generating each piece of content, apply `skills/quality_audit.md`. Do not continue to the next step until the content passes.
-3. [Additional rule]
+3. Do not deviate from the agent's stated objective; include only the workflow steps, rules, references, and context explicitly required by the Role — nothing more.
+4. [Additional rule]
 
 ## Reference
 - `skills/quality_audit.md` - Reads all referenced rules, compiles them, and validates the output against them.
