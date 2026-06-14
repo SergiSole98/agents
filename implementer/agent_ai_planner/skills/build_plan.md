@@ -21,6 +21,18 @@ Builds the final implementation plan from the validated hypothesis, reviewed con
 15. If a file could not be reviewed, do not invent exact changes. Use `Pendiente de confirmar tras revisar [archivo]`.
 16. Do not include sections for objective, context, reviewed files, hypothesis, success criteria, validation, risks, or optional recommendations.
 17. Do not include an explicit user acceptance question before implementation.
+18. When the plan creates or modifies an agent, apply `../../../generator/agent_spec_generator/skills/classify_responsibilities.md` before selecting its required files.
+19. Use the responsibility classification as the source of truth for the planned main-agent boundary and required local skills.
+20. List the main agent file and every local skill required by the responsibility classification as separate mandatory files.
+21. Keep the planned main agent change limited to orchestration, skill calls, blocking conditions, references, quality gates, and output routing.
+22. Map every planned business logic, domain logic, content generation, interpretation, transformation, evaluation, validation, or reusable reasoning responsibility to an explicit local skill file.
+23. When the plan creates an agent, include its mandatory local `skills/quality_audit.md` as a required file.
+24. Do not state `No activar capacidades adicionales.` when the plan creates or modifies an agent; include the agent-spec generator and agent auditor.
+
+## Reference
+
+- **`../../../generator/agent_spec_generator/skills/classify_responsibilities.md`** - Responsibility classifier used to determine the planned main-agent boundary and required local skills.
+- **`../../../generator/agent_spec_generator/agent_spec_generator.md`** - Agent generation standard used to determine mandatory agent files and implementation capabilities.
 
 ## Output
 

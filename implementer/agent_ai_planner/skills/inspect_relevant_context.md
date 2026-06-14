@@ -10,6 +10,8 @@ Identifies and reviews project context needed before planning an implementation.
 4. Read enough of each relevant file to identify facts, restrictions, dependencies, risks, existing patterns, and assumptions.
 5. Do not include unrelated folders or files only because they exist.
 6. Mark any unavailable but necessary file as missing context.
+7. When the objective creates or modifies an agent, review `generator/agent_spec_generator/agent_spec_generator.md`, `generator/agent_spec_generator/skills/classify_responsibilities.md`, `common/agent_structure/skill_agent_structure.md`, and `auditor/agent_auditor_specs/agent_auditor_specs.md`.
+8. When the objective creates or modifies a skill, review `generator/skill_spec_generator/skill_spec_generator.md`, `common/skill_structure/skill_skill_structure.md`, and `auditor/skill_auditor_specs/skill_auditor_specs.md`.
 
 ## Output
 

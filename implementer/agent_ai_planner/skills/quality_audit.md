@@ -1,16 +1,17 @@
 ## Role
 
-Re-recovers the minimum source evidence that drove the generation and checks that the output complies with its rules.
+Re-reads the documents that drove the generation and checks that the output complies with their rules.
 
 ## Rules
 
 1. Execute Workflow steps like an assembly line: start each Workflow step only after all processes from previous steps are complete.
-2. Re-open the source documents and sections required to audit the generated output; do not rely on context carried from previous Workflow steps.
-3. Compare the generated output against the recovered rules of each document that governs it.
-4. Verify that prior Workflow steps produced compact handoffs and that the current step re-recovered its required source evidence.
-5. Treat carrying full working context between Workflow steps or using a handoff summary as source evidence as a violation.
-6. If the output or context lifecycle does not comply with any governing rule, correct it until it does.
-7. After the audit, retain only the corrected output, confirmed constraints, unresolved issues, and source paths required for delivery.
+2. Re-read every document listed in this agent's Reference section.
+3. Compare the generated output against the rules of each document.
+4. When the output proposes or creates files, verify that every file is required by the objective or a governing rule and owns a distinct responsibility.
+5. Treat a file as a violation when its responsibility is already covered by an existing or proposed file.
+6. Treat a file as a violation when it only complements another file and can be integrated into that file without mixing distinct responsibilities.
+7. Treat omission of a file required by the objective or a governing rule as a violation.
+8. If the output does not comply with any rule, correct it until it does.
 
 ## Output
 
