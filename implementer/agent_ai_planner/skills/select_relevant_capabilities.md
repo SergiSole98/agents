@@ -10,9 +10,10 @@ Evaluates all discovered markdown-based agents and skills and selects only those
 4. Do not select a capability only because it exists.
 5. Do not select a capability whose role overlaps entirely with one already selected.
 6. If no capability improves the plan, output `No activar capacidades adicionales.`
-7. Select `generator/agent_spec_generator/agent_spec_generator.md` and `auditor/agent_auditor_specs/agent_auditor_specs.md` when the plan creates or modifies an agent.
-8. Select `generator/skill_spec_generator/skill_spec_generator.md` and `auditor/skill_auditor_specs/skill_auditor_specs.md` when the plan creates or modifies a skill outside the agent-spec generator workflow.
-9. Do not output `No activar capacidades adicionales.` while an artifact-specific generator or auditor required by Rules 7 or 8 applies.
+7. Select `generator/agent_spec_generator/agent_spec_generator.md` and `auditor/agent_auditor_specs/agent_auditor_specs.md` only when the plan creates a new agent, or when the plan explicitly justifies activating them to modify an existing agent.
+8. Select `generator/skill_spec_generator/skill_spec_generator.md` and `auditor/skill_auditor_specs/skill_auditor_specs.md` only when the plan creates a new skill outside the agent-spec generator workflow, or when the plan explicitly justifies activating them to modify an existing skill.
+9. When the plan only modifies an existing agent or skill without that explicit justification, select the matching auditor for the modified artifact and do not select its generator.
+10. Do not output `No activar capacidades adicionales.` while an artifact-specific generator or auditor required by Rules 7, 8, or 9 applies.
 
 ## Output
 

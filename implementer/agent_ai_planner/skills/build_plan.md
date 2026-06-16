@@ -23,14 +23,17 @@ Builds the final implementation plan from the confirmed objective, reduced conte
 17. If a file could not be reviewed, do not invent exact changes. Use `Pendiente de confirmar tras revisar [archivo]`.
 18. Do not include sections for objective, context, reviewed files, success criteria, validation, risks, or optional recommendations.
 19. Do not include an explicit user acceptance question before implementation.
-20. When the plan creates or modifies an agent, apply `../../../generator/agent_spec_generator/skills/classify_responsibilities.md` before selecting its required files.
-21. Use the responsibility classification as the source of truth for the planned main-agent boundary and required local skills.
-22. List the main agent file and every local skill required by the responsibility classification as separate mandatory files.
-23. Keep the planned main agent change limited to orchestration, skill calls, blocking conditions, references, quality gates, and output routing.
-24. Map every planned business logic, domain logic, content generation, interpretation, transformation, evaluation, validation, or reusable reasoning responsibility to an explicit local skill file.
-25. When a responsibility is absent in an agent, assign it only to the section that owns that content type: Role for scope, Workflow for ordered actions, Rules for limits and conditions, Reference for source files, and Output for delivery format.
-26. When the plan creates an agent, include its mandatory local `skills/quality_audit.md` as a required file.
-27. Do not state `No activar capacidades adicionales.` when the plan creates or modifies an agent; include the agent-spec generator and agent auditor.
+20. Classify each planned change as creation, modification, merge, move, or deletion of an existing artifact.
+21. Prefer modifying, merging, moving, or deleting an existing skill or agent over creating a new one.
+22. Plan the creation of a new skill or agent only when no existing artifact can own the responsibility after modification, merge, or move.
+23. When the plan creates or modifies an agent, apply `../../../generator/agent_spec_generator/skills/classify_responsibilities.md` before selecting its required files.
+24. Use the responsibility classification as the source of truth for the planned main-agent boundary and the owner of each functional responsibility.
+25. List the main agent file and every existing or new local skill required by the responsibility classification as separate mandatory files.
+26. Keep the planned main agent change limited to orchestration, skill calls, blocking conditions, references, quality gates, and output routing.
+27. Map every planned business logic, domain logic, content generation, interpretation, transformation, evaluation, validation, or reusable reasoning responsibility to its owning local skill, reusing an existing skill when one already covers it.
+28. When a responsibility is absent in an agent, assign it only to the section that owns that content type: Role for scope, Workflow for ordered actions, Rules for limits and conditions, Reference for source files, and Output for delivery format.
+29. When the plan creates a new agent, include its mandatory local `skills/quality_audit.md` as a required file.
+30. Do not state `No activar capacidades adicionales.` when the plan creates a new agent; include the agent-spec generator and agent auditor.
 
 ## Reference
 
@@ -50,8 +53,9 @@ Builds the final implementation plan from the confirmed objective, reduced conte
 | `[ruta/archivoY.ext]` | [qué se modificará] | [por qué hace falta este cambio] |
 
 Use this level of detail:
-| `Agents/analysis_orchestrator.md` | Ajustar `Workflow`, `Rules`, `Reference` y `Output` para insertar `agent_news_events_analyst` después de confirmar `News/`, `Events/` y `Technical_analysis/`. | El orquestador debe producir primero el análisis combinado de noticias/eventos y luego pasarlo al flujo de análisis técnico/inversión. |
-| `Agents/Invest_Analysis/News_Events/agent_news_events_analyst.md` | Crear el nuevo agent para leer `Analisis/<asset>/News/news.md` y `Analisis/<asset>/Events/events.md`, aplicar `Agents/Skills/news_interpreter.md` y escribir `Analisis/<asset>/News_events_analysis/news_events_analysis.md`. | Centraliza la interpretación de noticias/eventos antes de que otros agentes consuman esa señal. |
+| `Agents/analysis_orchestrator.md` | Ajustar `Workflow`, `Rules`, `Reference` y `Output` para que la interpretación de noticias/eventos use la skill existente `Agents/Skills/news_interpreter.md` en lugar de una nueva delegación. | El orquestador ya tiene un owner válido para esa señal; modificarlo evita crear artefactos redundantes. |
+| `Agents/Skills/news_interpreter.md` | Ampliar `Rules` y `Output` para cubrir también los eventos junto a las noticias. | Una skill existente puede absorber la responsabilidad nueva; modificarla es preferible a crear una skill separada. |
+| `Agents/Skills/events_interpreter.md` | Eliminar la skill y mover su única regla útil a `Agents/Skills/news_interpreter.md`. | Su responsabilidad queda cubierta tras fusionarla; mantenerla duplicaría lógica. |
 
 Do not include optional files such as `README.md` unless the user explicitly asks to update documentation.
 

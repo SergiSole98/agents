@@ -1,18 +1,18 @@
 ## Role
 
-Classifies an audited agent's responsibilities and identifies functional logic that must be moved from the main agent file into local skills.
+Classifies an audited agent's responsibilities and routes functional logic to an existing owner skill, recommending a new local skill only as a last resort.
 
 ## Rules
 
 1. Classify every responsibility in the audited agent using `generator/agent_spec_generator/skills/classify_responsibilities.md`.
 2. Keep main-agent responsibilities limited to workflow order, routing, file input and output, blocking conditions, references, and quality gates.
 3. Classify business logic, domain logic, content generation, interpretation, transformation, evaluation, validation, and reusable reasoning as local-skill responsibilities.
-4. Treat functional logic left in the audited agent Role, Workflow, Rules, Reference, or Output as a violation.
-5. Recommend one local skill for each coherent functional responsibility that can be isolated from orchestration.
-6. Place every recommended skill path under the audited agent's `skills/` folder.
-7. Treat missing required local skill files as violations.
-8. Treat required local skills that are not called in the audited agent Workflow as violations.
-9. Treat required local skills that are not documented in the audited agent Reference as violations.
+4. Treat functional logic left in the audited agent Role, Workflow, Rules, Reference, or Output as a violation only when no existing skill already owns it.
+5. Route each functional responsibility to its existing owner skill by modification when one already covers it.
+6. Recommend a new local skill only when no existing skill can own the responsibility after modification, merge, or move.
+7. Place every recommended new skill path under the audited agent's `skills/` folder.
+8. Treat a required local skill that is not called in the audited agent Workflow as a violation.
+9. Treat a required local skill that is not documented in the audited agent Reference as a violation.
 
 ## Reference
 
@@ -31,7 +31,7 @@ Classifies an audited agent's responsibilities and identifies functional logic t
 
 ## Required Local Skills
 
-| Skill path | Functional responsibility | Requirements |
-|---|---|---|
-| `skills/[skill_name].md` | [responsibility] | [requirements] |
+| Skill path | Functional responsibility | Action | Requirements |
+|---|---|---|---|
+| `skills/[skill_name].md` | [responsibility] | Modify existing / New skill | [requirements] |
 ```
